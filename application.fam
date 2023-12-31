@@ -1,6 +1,6 @@
 App(
     appid="gps_speedo",
-    name="[GPS] Speedometer ",
+    name="[GPS] Speedometer",
     apptype=FlipperAppType.EXTERNAL,
     entry_point="gps_app",
     requires=["gui"],

@@ -41,10 +41,10 @@ static void render_callback(Canvas* const canvas, void* context) {
 
         switch(gps_uart->speed_units) {
         case KPH:
-            snprintf(buffer, 64, "%.2f km", (double)(gps_uart->status.speed * KNOTS_TO_KPH));
+            snprintf(buffer, 64, "%.2f kph", (double)(gps_uart->status.speed * KNOTS_TO_KPH));
             break;
         case MPH:
-            snprintf(buffer, 64, "%.2f mi", (double)(gps_uart->status.speed * KNOTS_TO_MPH));
+            snprintf(buffer, 64, "%.2f mph", (double)(gps_uart->status.speed * KNOTS_TO_MPH));
             break;
         case KNOTS:
         default:
